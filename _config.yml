@@ -1,7 +1,7 @@
 # Site settings
 title: Booleen Blog
 SEOTitle: Booleen的博客 | BOOLEEN Blog
-header-img: img/booleen.jpg
+header-img: img/post-bg-2015.jpg
 email: booleenzheng@gmail.com
 description: "See you and see you."
 keyword: "BY, BY Blog, Booleen的博客,Travel"
@@ -12,7 +12,7 @@ github_repo: "https://github.com/zhenghuilin/zhenghuilin.github.io" # you code r
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "If you never leave me, I will be with you till death do us apart!"
-sidebar-avatar: /img/avatar_m.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/booleen.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 

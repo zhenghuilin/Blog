@@ -11,7 +11,7 @@ github_repo: "https://github.com/zhenghuilin/zhenghuilin.github.io" # you code r
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "If you never leave me, I will be with you till death do us apart!"
+sidebar-about-description: "Never too late to learn!"
 sidebar-avatar: /img/avatar_booleen.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 

@@ -1,0 +1,56 @@
+---
+layout:     post
+title:      css 盒模型
+subtitle:    "浅析盒模型"
+date:       2018-08-13
+author:     Booleen
+header-img: img/post-bg-swift.jpg
+catalog: true
+tags:
+    - css
+---
+
+## 概念：
+	CSS盒子模型：网页设计中CSS技术所使用的一种思维模型。
+## 组成：
+	CSS盒子模型组成：外边距(margin)、边框(border)、内边距(padding)、内容(content)。
+## 分类：
+	标准W3C模和IE盒模型(宽(width)和高(height)包括属性的不同)。
+# 对比如下：
+	W3C盒模型(如图1所示)：
+	占用宽和高：
+		width:margin*2+border*2+padding*2+width;
+	    height:margin*2+border*2+padding*2+height;
+	实际宽和高：
+		width:border*2+padding*2+width;
+	    height:border*2+padding*2+height;
+	
+	IE盒模型(如图1所示)：已经包含border和padding，
+	占用宽和高：
+		width:margin*2+width;
+	    height:margin*2+height;
+	实际宽和高：
+		width:width;
+	    height:height;	
+
+
+* 例子:
+	一个盒子模型如下：margin:20px,border:10px,padding:10px;width:200px;height:50px;
+	如果用w3c盒子模型解释，那么这个盒子模型占用的
+		宽度为：20*2+10*2+10*2+200=280px; 
+		高度：20*2+10*2+20*2+50=130px;
+	盒子的实际宽度大小为:10*2+10*2+200=240px;
+		  实际高度：10*2+10*2+50=90px;
+
+	用ie的盒子模型解释 ：
+		盒子在网页中占据的大小为20*2+200=240px; 高：20*2+50=90px;
+		盒子的实际大小为：宽度:200px, 高度:50px;
+
+
+* 补充：
+	CSS3的box-sizing属性：
+	语法：
+		```box-sizing ： content-box || border-box || inherit;```
+	当设置为box-sizing:content-box时，将采用标准模式(W3C盒模型)解析计算，也是默认模式；
+	当设置为box-sizing:border-box时，将采用怪异模式(IE盒模型)解析计算；
+	当设置为box-sizing:inherit时, 规定应从父元素继承 box-sizing 属性的值
